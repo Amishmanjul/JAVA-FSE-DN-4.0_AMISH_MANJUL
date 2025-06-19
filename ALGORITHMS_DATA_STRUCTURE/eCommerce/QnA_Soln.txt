@@ -1,0 +1,55 @@
+o	Explain Big O notation and how it helps in analyzing algorithms.
+Big O notation is a mathematical way to describe how an algorithm’s time or space requirements grow as the input size (n) increases.
+It focuses on the dominant term that affects performance and ignores constant factors, allowing us to compare the efficiency of different algorithms regardless of machine speed or implementation details.
+
+How does Big O help?
+ Predict scalability: Helps us understand how the algorithm will behave as data size grows (e.g., from 100 to 1,000,000 products).
+
+ Compare algorithms: Makes it easy to compare algorithms (e.g., O(n) linear search vs. O(log n) binary search).
+
+ Guide choices: Helps select the most efficient algorithm for a given task, especially important for large-scale platforms like e-commerce.
+
+
+
+
+
+o	Describe the best, average, and worst-case scenarios for search operations.
+
+| Search Type       | Best Case                                   | Average Case | Worst Case                           |
+| ----------------- | ------------------------------------------- | ------------ | ------------------------------------ |
+|   Linear Search   | O(1) (target is at the start)               | O(n)         | O(n) (target is at end or not found) |
+|   Binary Search   | O(1) (target is at the middle on first try) | O(log n)     | O(log n)                             |
+
+
+o	Compare the time complexity of linear and binary search algorithms.
+
+| Algorithm         | Time Complexity | Notes                                                               |
+| ----------------- | --------------- | ------------------------------------------------------------------- |
+|   Linear Search   | O(n)            | Simple, works on unsorted data, but inefficient for large datasets. |
+|   Binary Search   | O(log n)        | Requires sorted data but much faster, especially as `n` increases.  |
+
+
+
+
+o	Discuss which algorithm is more suitable for your platform and why.
+    Binary search is more suitable for an e-commerce platform because:
+        E-commerce platforms deal with large product catalogs (thousands to millions of products).
+        Binary search provides much faster performance (O(log n)) when data is sorted or indexed.
+        Sorting the data (or using database indexing) can be done once, and fast searches can then be performed repeatedly.
+        Users expect near-instant search results, making efficiency critical.
+
+    Linear search may still be useful:
+        For small datasets.
+        When the data isn’t sorted and sorting overhead is too high for one-time searches.
+
+
+OUTPUT :
+  PS C:\Users\91882\Desktop\Week1\ALGORITHMS_DATA_STRUCTURE\eCommerce> javac Product.java LinearSearch.java BinarySearch.java SearchApp.java
+>> java SearchApp
+>> 
+Found (Linear):
+ID: P002, Name: Mouse, Category: Accessories
+Found (Binary):
+ID: P002, Name: Mouse, Category: Accessories
+PS C:\Users\91882\Desktop\Week1\ALGORITHMS_DATA_STRUCTURE\eCommerce> 
+      

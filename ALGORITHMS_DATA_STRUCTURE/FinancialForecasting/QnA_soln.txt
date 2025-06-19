@@ -1,0 +1,36 @@
+o	Explain the concept of recursion and how it can simplify certain problems.
+        Recursion is a programming technique in which a function calls itself to solve smaller instances of the same problem. 
+        The recursive function works by breaking a large problem into simpler subproblems until it reaches a base case. 
+        The base case is a condition that stops the recursion, preventing it from continuing indefinitely. 
+        The recursive step moves the problem closer to this base case with each call.
+
+        Recursion simplifies certain problems by reducing complex tasks into smaller, more manageable parts. 
+        It is particularly useful in scenarios where problems have repetitive or self-similar patterns, such as tree traversals, 
+        mathematical computations like factorial or Fibonacci series, and divide-and-conquer algorithms like quicksort and mergesort. 
+        By using recursion, code often becomes cleaner, easier to understand, and more aligned with the logical flow of the problem.
+
+o	Discuss the time complexity of your recursive algorithm.
+        The time complexity of the recursive algorithm for financial forecasting is O(n), where n is the number of years for 
+        which the future value is calculated. This is because the function makes a single recursive call for each year, 
+        reducing the problem size by one at each step until it reaches the base case. As a result, the number of recursive calls is 
+        directly proportional to the number of years, leading to linear time complexity. The space complexity is also O(n) due to 
+        the recursion stack, as each recursive call adds a new frame to the call stack until the base case is reached.
+
+o	Explain how to optimize the recursive solution to avoid excessive computation.
+        To optimize the recursive solution and avoid excessive computation, the recursion can be replaced with an iterative approach. 
+        An iterative method calculates the future value in a loop, which eliminates the overhead of recursive function calls and reduces 
+        the space complexity from O(n) to O(1). Another way to optimize is by using memoization, where previously computed values are 
+        stored and reused to avoid redundant calculations. Although in this specific forecasting problem memoization is less critical 
+        because each value depends only on the previous one, in problems with overlapping subproblems, memoization can significantly 
+        improve efficiency.
+
+
+
+OUTPUT
+
+PS C:\Users\91882\Desktop\Week1\ALGORITHMS_DATA_STRUCTURE\FinancialForecasting> javac FinancialForecast.java
+PS C:\Users\91882\Desktop\Week1\ALGORITHMS_DATA_STRUCTURE\FinancialForecasting> java FinancialForecast
+>> 
+Future value (recursive) after 5 years: 1276.28
+Future value (iterative) after 5 years: 1276.28
+PS C:\Users\91882\Desktop\Week1\ALGORITHMS_DATA_STRUCTURE\FinancialForecasting> 

@@ -1,0 +1,12 @@
+OUTPUT
+PS C:\Users\91882\Desktop\Week1\DESIGN_PATTERN\SingletonPattern> javac logger.java testSingleton.java
+PS C:\Users\91882\Desktop\Week1\DESIGN_PATTERN\SingletonPattern> java testSingleton
+Logger instance created.
+[INFO]: Application started.
+[DEBUG]: Debugging initialization process.
+[WARNING]: Low memory warning.
+[ERROR]: Null pointer exception occurred.
+[INFO]: User logged in.
+[DEBUG]: Loading dashboard components.
+All logger instances are the same (Singleton confirmed).
+
