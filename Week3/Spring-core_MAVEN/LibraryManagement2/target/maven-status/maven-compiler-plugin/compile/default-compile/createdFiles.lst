@@ -1,0 +1,8 @@
+META-INF\spring.components
+com\Library\GreetingController.class
+com\Library\BookRepository.class
+com\Library\BookService.class
+com\Library\Book.class
+com\Library\LibraryManagementApplication.class
+com\Library\Greeting.class
+com\Library\App.class

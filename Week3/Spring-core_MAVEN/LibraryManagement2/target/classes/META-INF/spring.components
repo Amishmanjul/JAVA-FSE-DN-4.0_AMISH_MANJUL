@@ -1,0 +1,5 @@
+com.Library.App=org.springframework.stereotype.Component
+com.Library.BookRepository=org.springframework.stereotype.Component
+com.Library.BookService=org.springframework.stereotype.Component
+com.Library.GreetingController=org.springframework.stereotype.Component
+com.Library.LibraryManagementApplication=org.springframework.stereotype.Component
